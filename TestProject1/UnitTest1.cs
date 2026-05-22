@@ -1,7 +1,4 @@
-﻿using NUnit.Framework;
-using System;
-using System.IO;
-
+﻿
 namespace TextDividerModule
 {
     // Ручной тестовый двойник (Stub) для IFileReader
