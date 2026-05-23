@@ -31,8 +31,9 @@
             EnterBox = new TextBox();
             ResultButton = new Button();
             ResultBox = new TextBox();
-            numericUpDown2 = new NumericUpDown();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown2).BeginInit();
+            NumericUpDown = new NumericUpDown();
+            ErrorLabel = new Label();
+            ((System.ComponentModel.ISupportInitialize)NumericUpDown).BeginInit();
             SuspendLayout();
             // 
             // EnterBox
@@ -60,28 +61,37 @@
             ResultBox.Size = new Size(228, 23);
             ResultBox.TabIndex = 2;
             // 
-            // numericUpDown2
+            // NumericUpDown
             // 
-            numericUpDown2.Location = new Point(295, 83);
-            numericUpDown2.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
-            numericUpDown2.Name = "numericUpDown2";
-            numericUpDown2.Size = new Size(41, 23);
-            numericUpDown2.TabIndex = 4;
-            numericUpDown2.Value = new decimal(new int[] { 1, 0, 0, 0 });
+            NumericUpDown.Location = new Point(295, 83);
+            NumericUpDown.Name = "NumericUpDown";
+            NumericUpDown.Size = new Size(41, 23);
+            NumericUpDown.TabIndex = 4;
+            NumericUpDown.Value = new decimal(new int[] { 1, 0, 0, 0 });
+            // 
+            // ErrorLabel
+            // 
+            ErrorLabel.AutoSize = true;
+            ErrorLabel.Location = new Point(27, 42);
+            ErrorLabel.Name = "ErrorLabel";
+            ErrorLabel.Size = new Size(75, 15);
+            ErrorLabel.TabIndex = 5;
+            ErrorLabel.Text = "Нет ошибок";
             // 
             // MainForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(371, 243);
-            Controls.Add(numericUpDown2);
+            Controls.Add(ErrorLabel);
+            Controls.Add(NumericUpDown);
             Controls.Add(ResultBox);
             Controls.Add(ResultButton);
             Controls.Add(EnterBox);
             Name = "MainForm";
             Text = "Main";
             Load += MainForm_Load;
-            ((System.ComponentModel.ISupportInitialize)numericUpDown2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)NumericUpDown).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -91,6 +101,7 @@
         private TextBox EnterBox;
         private Button ResultButton;
         private TextBox ResultBox;
-        private NumericUpDown numericUpDown2;
+        private NumericUpDown NumericUpDown;
+        private Label ErrorLabel;
     }
 }

@@ -50,6 +50,4 @@ namespace TextDividerModule
             return Divider(content, blockLength);
         }
     }
-
-
 }
