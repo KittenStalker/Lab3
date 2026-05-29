@@ -90,7 +90,6 @@
             Controls.Add(EnterBox);
             Name = "MainForm";
             Text = "Main";
-            Load += MainForm_Load;
             ((System.ComponentModel.ISupportInitialize)NumericUpDown).EndInit();
             ResumeLayout(false);
             PerformLayout();
